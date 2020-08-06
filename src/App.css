@@ -1,0 +1,283 @@
+/* css for App Conatiner */
+.App {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* css for IPOD */
+.ipod {
+    padding: 30px;
+    background-color: #b9b9b9;
+    border-radius: 20px;
+    /* css to generate Reflextion */
+    -webkit-box-reflect: below 8px -webkit-gradient(linear, right top, right bottom, from(transparent), to(rgba(255, 255, 255, 0.4)));
+}
+
+/* css for IPOD Screen */
+.screen {
+    width: 280px;
+    height: 200px;
+    border: 5px solid gray;
+    box-sizing: border-box;
+    background-color: white;
+    background-image: url("./components/screen/images/background-image-main-menu.jpg");
+    background-size: cover;
+    margin-bottom: 30px;
+}
+
+/* css for Main Menu and Music Menu */
+.menu {
+    width: 50%;
+    height: 100%;
+    padding-left: 5px;
+    background-color: white;
+}
+
+/* css for main menu and Music menu Header */
+.menu-header {
+    color: black;
+    font-size: 20px;
+    padding: 10px 5px;
+    font-weight: bold;
+}
+
+.menu-item {
+    padding: 5px 5px;
+}
+
+/* css to mark List Item as Active */
+.menu-item-active {
+    background-color: skyblue;
+    position: relative;
+    color: white;
+}
+
+.menu-item-active::after {
+    content: ">";
+    position: absolute;
+    right: 5px;
+    color: white;
+}
+
+/* CSS for control wheel */
+.control-wheel-container {
+    width: 280px;
+    height: 200px;
+    background-color: #b9b9b9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* css for outer wheel */
+.outer-wheel {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* css for inner wheel */
+.inner-wheel {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #b9b9b9;
+}
+
+/* CSS for center Wheel containing Button */
+.wheel {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 0px;
+    outline: none;
+    background-color: transparent;
+}
+
+/* CSS for Buttons */
+.button {
+    position: absolute;
+    color: #b9b9b9;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 99999;
+}
+/* css for menu button */
+.up {
+    top: 10px;
+}
+/* css for play pause button */
+.down {
+    bottom: 10px;
+}
+/* css for backward button */
+.left {
+    left: 0px;
+}
+/* css for forward button */
+.right {
+    right: 0px;
+}
+
+/* CSS for Games Screen */
+.games {
+    width: 100%;
+    height: 100%;
+    background-image: url("./components/screen/images/background-image-game-logo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* CSS for Cover Flow Screen */
+
+.cover-flow {
+    width: 100%;
+    height: 100%;
+    background-image: url("./components/screen/images/cover-flow.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* CSS for Settings Screen */
+
+.settings {
+    width: 100%;
+    height: 100%;
+    background-image: url("./components/screen/images/settings-logo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* CSS for All Songs Screen */
+
+.all-songs {
+    width: 100%;
+    height: 100%;
+    background-image: url("./components/screen/images/songs_logo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* CSS for artists Screen */
+
+.artists {
+    width: 100%;
+    height: 100%;
+    background-image: url("./components/screen/images/artist.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* CSS for Albums Screen*/
+.albums {
+    width: 100%;
+    height: 100%;
+    background-image: url("./components/screen/images/album.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* CSS for music player */
+#main {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+#image {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#image img {
+    width: 50%;
+    height: 80%;
+}
+#player {
+    color: #333;
+    background-color: white;
+    height: 50%;
+}
+#song-title {
+    width: 100%;
+    text-align: center;
+    font-family: monospace;
+    color: black;
+    font-size: 18px;
+}
+#buttons {
+    height: 50px;
+    width: 100%;
+    position: relative;
+}
+#play,
+#next,
+#pre {
+    width: 50px;
+    height: 50px;
+    border: 0;
+    background-color: royalblue;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#next {
+    width: 30px;
+    height: 30px;
+    left: 70%;
+}
+#pre {
+    width: 30px;
+    height: 30px;
+    left: 30%;
+}
+#play img,
+#next img,
+#pre img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#seek-bar {
+    width: 250px;
+    height: 5px;
+    background-color: gray;
+    display: flex;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 10px;
+    position: relative;
+}
+#fill {
+    height: 5px;
+    background-color: royalblue;
+    border-radius: 20px;
+}
+#handle {
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    left: 0px;
+    background-color: royalblue;
+    border-radius: 50%;
+    transform: scale(2);
+}
